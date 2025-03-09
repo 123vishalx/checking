@@ -20,6 +20,11 @@ mongoose
 const blogRoutes = require("./routes/blogRoutes");
 app.use("/api/blogs", blogRoutes);
 
+
+app.get('/' , (req, res)=>{
+    res.send('Hello World!')
+})
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
