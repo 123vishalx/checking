@@ -5,6 +5,11 @@ const cors = require("cors");
 
 // Initialize Express app
 const app = express();
+//const corsOptions = {
+//    origin: 'http://localhost:5000', 
+  //  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    //allowedHeaders: ['Content-Type', 'Authorization'], 
+  //};
 
 // Middleware
 app.use(express.json()); // Parse JSON requests
